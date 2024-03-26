@@ -7,6 +7,7 @@ import Services from "./ui/services/services";
 import Testimonial from "./ui/testimonial/testimonial";
 import Team from "./ui/team/team";
 import Faq from "./ui/faq/faq";
+import Footer from "./ui/footer/footer";
 // import styles from "./page.module.css";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonial />
       <Team />
       <Faq />
+      <Footer />
     </main>
   );
 }
