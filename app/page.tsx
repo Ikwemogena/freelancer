@@ -8,7 +8,6 @@ import Testimonial from "./ui/testimonial/testimonial";
 import Team from "./ui/team/team";
 import Faq from "./ui/faq/faq";
 import Footer from "./ui/footer/footer";
-// import styles from "./page.module.css";
 
 export default function Home() {
   return (
