@@ -211,10 +211,8 @@ ul {
     &-cards {
       position: absolute;
       background-color: #000000;
-      // width: Hug (148px)px;
-      //   height: Hug (40px)px;
-      //   top: 207px;
-      //   left: 248px;
+      display: flex;
+      align-items: center;
       padding: 8px;
       gap: 8px;
       border-radius: 8px;
@@ -227,25 +225,31 @@ ul {
       letter-spacing: -0.02em;
       text-align: center;
       color: #FFFFFF;
+      // text-wrap: nowrap;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
 
       &:nth-child(1) {
         top: -25px;
-        left: 69px;
+        left: 36px;
       }
 
       &:nth-child(2) {
         top: -12px;
-        right: 39px;
+        right: 20px;
       }
 
       &:nth-child(3) {
         top: 278px;
-        left: -19px;
+        left: -59px;
       }
 
       &:nth-child(4) {
         top: 309px;
-        right: -117px;
+        right: -148px;
       }
     }
   }
