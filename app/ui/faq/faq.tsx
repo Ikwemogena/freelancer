@@ -19,7 +19,7 @@ function Faq() {
             <div className="faq__items">
                 {
                     faqs.map((faq, index) => (
-                        <div key={index} className='faq-title'><p>{faq}</p> <img src="/assets/icons/arrow-down-right.svg" alt="" /></div>
+                        <div key={index} className='faq-title'><p>{faq}</p> <Image src="/assets/icons/arrow-down-right.svg" alt={faq} width={24} height={24} /></div>
                     ))
                 }
             </div>
