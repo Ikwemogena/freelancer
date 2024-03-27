@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image'
 
 const faqs = [
     'What amenities are included in the coworking space?',
@@ -13,13 +13,13 @@ function Faq() {
     return (
         <section className='faq'>
             <div className="faq__title">
-                faq
+                faq&apos;s
             </div>
 
             <div className="faq__items">
                 {
                     faqs.map((faq, index) => (
-                        <p key={index}>{faq}</p>
+                        <div key={index} className='faq-title'><p>{faq}</p> <img src="/assets/icons/arrow-down-right.svg" alt="" /></div>
                     ))
                 }
             </div>
