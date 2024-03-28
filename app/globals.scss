@@ -576,6 +576,7 @@ ul {
   }
 
   &__title {
+    overflow: hidden;
     font-family: 'Helvetica Neu Md', sans-serif;
     // font-size: 252px;
     font-size: 285px;
