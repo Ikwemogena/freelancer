@@ -1,5 +1,27 @@
+"use client"
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(useGSAP)
+
 export default function Footer() {
     const year = new Date().getFullYear()
+
+    useGSAP(() => {
+        gsap.from('.footer__title p', {
+            duration: 1,
+            y: 200,
+            opacity: 0,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '.footer__bottom-container',
+                // start: 'top 80%',
+            }
+        })
+    })
     return (
         <footer className='footer'>
             <div className='footer__top'>
@@ -20,7 +42,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='footer__bottom-container'>
-                <div className='footer__title'>freelancer</div>
+                <div className='footer__title'><p>freelancer</p></div>
                 <div className='footer__bottom'>
                     <div className='footer__bottom-links'>
                         <p>team</p>
