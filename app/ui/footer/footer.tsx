@@ -7,6 +7,48 @@ import { useGSAP } from '@gsap/react'
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(useGSAP)
 
+const getRandomCharacter = () => {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    return chars[Math.floor(Math.random() * chars.length)]
+}
+
+const shuffleAnimation = (event: any) => {
+    const target = event.currentTarget
+
+    if (target.dataset.animating) {
+        return;
+    }
+
+    target.dataset.animating = true
+
+    const words = target.querySelectorAll('.footer__title p')
+    const originalWords = Array.from(words).map((word: any) => word.textContent)
+    let shuffles = 0
+    const maxShuffles = 10
+    const intervalDuration = 500 / maxShuffles
+
+    let animationInterval = setInterval(() => {
+        if (shuffles >= maxShuffles) {
+            clearInterval(animationInterval)
+
+            words.forEach((word: any, index: any) => {
+                word.textContent = originalWords[index];
+            })
+            delete target.dataset.animating
+        } else {
+            words.forEach((word: any) => {
+                const length = word.textContent.length
+                let shuffledText = ''
+                for (let i = 0; i < length; i++) {
+                    shuffledText += getRandomCharacter()
+                }
+                word.textContent = shuffledText
+            })
+            shuffles++
+        }
+    }, intervalDuration)
+}
+
 export default function Footer() {
     const year = new Date().getFullYear()
 
@@ -17,8 +59,7 @@ export default function Footer() {
             opacity: 0,
             ease: 'power2.out',
             scrollTrigger: {
-                trigger: '.footer__bottom-container',
-                // start: 'top 80%',
+                trigger: '.footer__bottom-container'
             }
         })
     })
@@ -42,7 +83,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='footer__bottom-container'>
-                <div className='footer__title'><p>freelancer</p></div>
+                <div className='footer__title' onMouseEnter={shuffleAnimation} onMouseLeave={shuffleAnimation}><p>freelancer</p></div>
                 <div className='footer__bottom'>
                     <div className='footer__bottom-links'>
                         <p>team</p>
