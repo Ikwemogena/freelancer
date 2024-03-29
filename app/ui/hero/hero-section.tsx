@@ -2,6 +2,7 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
+import NavBar from '../nav-bar'
 
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(useGSAP)
@@ -15,15 +16,10 @@ export default function HeroSection() {
       opacity: 0,
       ease: 'power2.out',
       stagger: 0.5,
-      // scrollTrigger: {
-      //   trigger: '.hero__section-content',
-      //   // start: 'top 80%',
-      // }
     })
   })
   return (
     <section className='hero__section'>
-      <div className='black-overlay'></div>
       <div className='hero__section-content'>
         <h1>create</h1>
         <h1>innovate</h1>

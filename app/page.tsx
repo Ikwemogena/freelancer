@@ -12,8 +12,11 @@ import Footer from "./ui/footer/footer";
 export default function Home() {
   return (
     <main>
-      <NavBar />
-      <HeroSection />
+      <div className="hero-wrapper">
+        <div className='black-overlay'></div>
+        <NavBar />
+        <HeroSection />
+      </div>
       <AboutUs />
       <AudienceSection />
       <Services />

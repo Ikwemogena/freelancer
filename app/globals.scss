@@ -40,13 +40,12 @@ body {
 }
 
 .header {
-  // background-color: #333;
+  position: absolute;
   font-family: 'Helvetica Neu Md', sans-serif;
-  // width: 100%;
+  width: 100%;
   // position: fixed;
   color: #FFFFFF;
   padding: 1rem;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +56,6 @@ body {
   font-weight: 500;
   line-height: 21.98px;
   letter-spacing: -0.02em;
-  text-align: left;
 
   ul {
     display: flex;
@@ -85,31 +83,33 @@ body {
   font-size: 18px;
 }
 
-
-.hero__section {
+.hero-wrapper {
   background-image: url('https://s3-alpha-sig.figma.com/img/f2e6/c03c/318f9ad6671236bacce5ec504ac179b0?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KMXfi57Xc0fi0eQUGrHnBSYC6gMLYeBzG-n6ZTIUT1kBQaSPwBqeZjiNLOOLbcKXZ83w8fD~2wMpgs9aVOmZaSxfiPkDk6ixrhwoP8TKG64iJfcF-L-58~LtlUunzpjEArWN6DDFC0qLuUcniesTD2chzmT~jROgHYTxD4FIhROWByX3flj6BNbT6fUYEg2fPk~z6C4XAKEI1cQCQerPZ7NRn7KLJheIGj4rDGN6hTJlpM3VSEp~OShei9vqgzab-LP~KSLi-L9A2Z2XxrnzMaNQBs4wHzEzRYhtGiajeCJqIXSQLlD06DqYKFuf1pF9KPA9sbmGvoT3VXzx2kWv3g__');
   background-size: cover;
   background-position: center;
-  // background-color: #FE5824;
   height: 100vh;
+}
+
+
+.hero__section {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &-content {
-    // font-family: 'Helvetica Neue';
-    // font-weight: 400;
-    font-size: 128px;
+    font-size: clamp(2rem, 7vw, 8rem);
     color: #FFFFFF;
     line-height: 124px;
     letter-spacing: -0.02em;
     text-align: center;
     text-transform: capitalize;
     z-index: 10;
+    font-family: 'Helvetica Neu Md', sans-serif;
 
     h1 {
-      font-family: 'Helvetica Neu Md', sans-serif;
+      // font-family: 'Helvetica Neu Md', sans-serif;
       font-weight: 400;
     }
 
@@ -285,6 +285,7 @@ body {
 }
 
 .services {
+  gap: 4rem;
   min-height: 100vh;
   background-color: #0E1118;
   color: #FFFFFF;
