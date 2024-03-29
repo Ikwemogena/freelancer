@@ -58,14 +58,15 @@ body {
   line-height: 21.98px;
   letter-spacing: -0.02em;
   text-align: left;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 60px;
+  }
 }
 
-ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 60px;
-}
 
 .logo-container {
   display: flex;
@@ -283,7 +284,7 @@ ul {
 }
 
 .services {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #0E1118;
   color: #FFFFFF;
   padding: 100px 40px;
@@ -482,12 +483,12 @@ ul {
 }
 
 .faq {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #FE5824;
   color: #FFFFFF;
-  padding: 0 0 100 0px;
+  padding: 0 0 100px 0px;
 
 
   &__title {
@@ -610,6 +611,372 @@ ul {
       align-items: center;
       gap: 40px;
       text-transform: capitalize;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .hero__section-content {
+    font-size: 82px;
+    line-height: 121%;
+  }
+
+  .about__text {
+    &-title {
+      font-size: 66px;
+      line-height: 65px;
+    }
+
+    &-sub {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 250px;
+    }
+
+    padding: 20px;
+    font-size: 24px;
+    line-height: 29.02px;
+  }
+
+  .about__images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .audience__content {
+    h1 {
+      font-size: 100px;
+      line-height: 85px;
+    }
+
+    &-cards {
+      font-size: 16px;
+      line-height: 19.34px;
+
+      &:nth-child(1) {
+        top: -20px;
+        left: 53px;
+      }
+
+      &:nth-child(2) {
+        top: -17px;
+        right: 31px;
+      }
+
+      &:nth-child(3) {
+        top: 262px;
+        left: 11px;
+      }
+
+      &:nth-child(4) {
+        top: 244px;
+        right: 11px;
+      }
+    }
+  }
+
+  .services {
+    padding: 50px 20px;
+    gap: 3rem;
+    // height: 100%;
+  }
+
+  .services__heading {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .services__offerings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__offerings-card {
+    // padding: 1rem;
+    // border-radius: 8px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // gap: 1rem;
+  }
+
+  .testimonial__text {
+    max-width: 400px;
+    gap: 1rem;
+    margin: 0 0 50px 20px;
+
+    h3 {
+      font-size: 24px;
+      line-height: 29.02px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 29.02px;
+    }
+  }
+
+  .team {
+    padding: 60px 20px;
+  }
+
+  .team__heading {
+    font-size: 77px;
+    line-height: 62px;
+  }
+
+  .team__members {
+    display: flex;
+    gap: 24px;
+    overflow: hidden;
+  }
+
+  .team__members-card {
+    &-image {
+      width: 348px;
+      height: 420px;
+    }
+
+    &-text {
+      h2 {
+        font-size: 16px;
+        line-height: 19.54px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 19.09px;
+      }
+    }
+  }
+
+  .faq__title {
+    font-size: 64px;
+    line-height: 62px;
+    padding: 60px 20px;
+  }
+
+  .faq__items {
+    .faq-title {
+      p {
+        font-size: 20px;
+      }
+
+      padding: 20px;
+    }
+  }
+
+  .footer {
+    height: 100%;
+    gap: 50px;
+    padding: 60px 20px 30px;
+
+    &__top {
+      &-content {
+        max-width: 429px;
+      }
+    }
+
+    &__title {
+      font-size: 144px;
+      line-height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    padding: 1rem;
+    display: none;
+
+    ul {
+      display: none;
+    }
+  }
+
+  .hero__section-content {
+    font-size: 40px;
+    line-height: 121%;
+
+    h1:nth-child(3) {
+      margin-left: 2rem;
+    }
+  }
+
+  .about__text {
+    flex-direction: column;
+    gap: 1rem;
+
+    &-title {
+      font-size: 45px;
+      line-height: 40px;
+    }
+
+    &-sub {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 250px;
+    }
+
+    padding: 20px;
+    font-size: 24px;
+    line-height: 29.02px;
+  }
+
+  .about__images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .audience__content {
+    // display: none;
+
+    h1 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+
+    &-cards {
+      font-size: 16px;
+      line-height: 19.34px;
+
+      &:nth-child(1) {
+        top: -20px;
+        left: 53px;
+      }
+
+      &:nth-child(2) {
+        top: -17px;
+        right: 31px;
+      }
+
+      &:nth-child(3) {
+        top: 262px;
+        left: 11px;
+      }
+
+      &:nth-child(4) {
+        top: 244px;
+        right: 11px;
+      }
+    }
+  }
+
+  .services {
+    gap: 2rem;
+  }
+
+  .services__heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .services__offerings {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services__offerings-card {
+    // padding: 1rem;
+    // border-radius: 8px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // gap: 1rem;
+  }
+
+  .testimonial__text {
+    max-width: 400px;
+    gap: 1rem;
+    margin: 0 0 50px 20px;
+
+    h3 {
+      font-size: 24px;
+      line-height: 29.02px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 29.02px;
+    }
+  }
+
+  .team {}
+
+  .team__heading {
+    font-size: 63px;
+    line-height: 45px;
+  }
+
+  .team__members {
+    // display: flex;
+    // gap: 24px;
+    // overflow: hidden;
+  }
+
+  .team__members-card {
+    &-image {
+      width: 348px;
+      height: 420px;
+    }
+
+    &-text {
+      h2 {
+        font-size: 16px;
+        line-height: 19.54px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 19.09px;
+      }
+    }
+  }
+
+  .faq__title {
+    font-size: 64px;
+    line-height: 62px;
+    padding: 60px 20px;
+  }
+
+  .faq__items {
+    .faq-title {
+      p {
+        font-size: 20px;
+      }
+
+      padding: 20px;
+    }
+  }
+
+  .footer {
+    height: 100%;
+    gap: 50px;
+    padding: 60px 20px 30px;
+
+    &__top {
+      flex-direction: column;
+      gap: 2rem;
+
+      &-content {
+        max-width: 429px;
+      }
+    }
+
+    &__title {
+      font-size: 77px;
+      line-height: 120px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 }
