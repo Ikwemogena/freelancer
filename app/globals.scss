@@ -42,8 +42,8 @@ body {
 .header {
   // background-color: #333;
   font-family: 'Helvetica Neu Md', sans-serif;
-  width: 100%;
-  position: fixed;
+  // width: 100%;
+  // position: fixed;
   color: #FFFFFF;
   padding: 1rem;
   text-align: center;
@@ -215,6 +215,7 @@ body {
 
 
 .audience {
+  overflow: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -873,8 +874,10 @@ body {
   }
 
   .services__heading {
-    font-size: 28px;
-    line-height: 40px;
+    // font-size: 28px;
+    // line-height: 40px;
+    font-size: 20px;
+    line-height: 31px;
   }
 
   .services__offerings {
