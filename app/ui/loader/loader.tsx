@@ -6,19 +6,21 @@ import { useGSAP } from '@gsap/react'
 
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(useGSAP)
-export default function Loader({ hasLoaded = true }: { hasLoaded: boolean }) {
-// export default function Loader() {
+// export default function Loader({ hasLoaded = true }: { hasLoaded: boolean }) {
+export default function Loader() {
 
     useGSAP(() => {
+        gsap.set("body", { overflow: "hidden" })
         gsap.to(".loader", {
-            opacity: 0,
             duration: 1.5,
             delay: 1.5,
-            // duration: 0.5,
-            // delay: 7.5,
-            ease: "power1.inOut"
+            y: -100,
+            height: 0,
+            ease: "power1.inOut",
+            onComplete: () => {
+                gsap.set("body", { overflow: "auto" })
+            }
         });
-        console.log(hasLoaded, "Loader has been hidden")
     })
     return (
         <section className="loader">
@@ -26,7 +28,6 @@ export default function Loader({ hasLoaded = true }: { hasLoaded: boolean }) {
                 <Image src="/freelancer-logo.svg" alt="Logo" width={35} height={42} />
                 <p>Freelancer</p>
             </div>
-
         </section>
     )
 }
