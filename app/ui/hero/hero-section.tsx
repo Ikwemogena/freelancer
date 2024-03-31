@@ -2,13 +2,11 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
-import NavBar from '../nav-bar'
 
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(useGSAP)
 
 export default function HeroSection() {
-
   useGSAP(() => {
     gsap.from('.hero__section-content h1', {
       duration: 1,
