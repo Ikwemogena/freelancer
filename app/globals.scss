@@ -84,7 +84,7 @@ body {
 }
 
 .hero-wrapper {
-  background-image: url('https://s3-alpha-sig.figma.com/img/f2e6/c03c/318f9ad6671236bacce5ec504ac179b0?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KMXfi57Xc0fi0eQUGrHnBSYC6gMLYeBzG-n6ZTIUT1kBQaSPwBqeZjiNLOOLbcKXZ83w8fD~2wMpgs9aVOmZaSxfiPkDk6ixrhwoP8TKG64iJfcF-L-58~LtlUunzpjEArWN6DDFC0qLuUcniesTD2chzmT~jROgHYTxD4FIhROWByX3flj6BNbT6fUYEg2fPk~z6C4XAKEI1cQCQerPZ7NRn7KLJheIGj4rDGN6hTJlpM3VSEp~OShei9vqgzab-LP~KSLi-L9A2Z2XxrnzMaNQBs4wHzEzRYhtGiajeCJqIXSQLlD06DqYKFuf1pF9KPA9sbmGvoT3VXzx2kWv3g__');
+  background-image: url('/images/hero-freelancer.webp');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -980,6 +980,34 @@ body {
     &__bottom {
       flex-direction: column;
       gap: 1rem;
+    }
+  }
+}
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0E1118;
+  color: #FFFFFF;
+  z-index: 20;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  &__wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    p {
+      font-family: 'Helvetica Neu Md', sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48.84px;
+      letter-spacing: -0.02em;
     }
   }
 }
