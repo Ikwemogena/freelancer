@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client"
 import HeroSection from "./ui/hero/hero-section";
 import NavBar from "./ui/nav-bar";
 import AboutUs from "./ui/about/about-section";
@@ -10,7 +10,12 @@ import Faq from "./ui/faq/faq";
 import Footer from "./ui/footer/footer";
 
 export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 3000))
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Done!');
+      console.log('done loading')
+    }, 3000);
+  })
 
   return (
     <main>
@@ -22,7 +27,10 @@ export default async function Home() {
       <AboutUs />
       <AudienceSection />
       <Services />
-      <Testimonial />
+      <div>
+        <div className='black-overlay'></div>
+        <Testimonial />
+      </div>
       <Team />
       <Faq />
       <Footer />
