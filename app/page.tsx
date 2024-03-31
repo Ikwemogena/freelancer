@@ -9,7 +9,9 @@ import Team from "./ui/team/team";
 import Faq from "./ui/faq/faq";
 import Footer from "./ui/footer/footer";
 
-export default function Home() {
+export default async function Home() {
+  await new Promise((resolve) => setTimeout(resolve, 3000))
+
   return (
     <main>
       <div className="hero-wrapper">
