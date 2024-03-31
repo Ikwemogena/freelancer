@@ -15,10 +15,9 @@ export default function Home() {
   const [hasLoaded, setHasLoaded] = useState(false)
 
   useEffect(() => {
-    setTimeout(() => {
-      setHasLoaded(true)
-    }, 2000)
+    setHasLoaded(true)
   }, [])
+
   return (
     <>
       {hasLoaded && <Loader />}
