@@ -12,15 +12,6 @@ import { useEffect, useState } from "react";
 import Loader from "./ui/loader/loader";
 
 export default function Home() {
-
-  // async function CallProductsAPI() {
-  //   let tmp = await fetch('https://dummyjson.com/products')
-  //   let data = await tmp.json()
-  //   console.log("Data from API : ", data);
-  //   // VISIBLE IN BROWSER CONSOLE
-  //   SetProducts(data)
-  // }
-
   const [hasLoaded, setHasLoaded] = useState(false)
 
   useEffect(() => {
@@ -30,9 +21,9 @@ export default function Home() {
   }, [])
   return (
     <>
-      {!hasLoaded && <Loader hasLoaded={hasLoaded} />}
+      {hasLoaded && <Loader />}
       {hasLoaded && (
-        <main>
+        <main className="container">
           <div className="hero-wrapper">
             <div className='black-overlay'></div>
             <NavBar />

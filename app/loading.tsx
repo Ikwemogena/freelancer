@@ -7,7 +7,6 @@ export default function Loading() {
                 <Image src="/freelancer-logo.svg" alt="Logo" width={35} height={42} />
                 <p>Freelancer</p>
             </div>
-
         </section>
     )
 }
