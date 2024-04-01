@@ -818,14 +818,15 @@ body {
     gap: 1rem;
 
     &-title {
-      font-size: 45px;
-      line-height: 40px;
+      font-size: 33px;
+      line-height: 100%;
+      max-width: 279px;
     }
 
     &-sub {
       font-size: 16px;
       line-height: 20px;
-      max-width: 250px;
+      max-width: 100%;
     }
 
     padding: 20px;
