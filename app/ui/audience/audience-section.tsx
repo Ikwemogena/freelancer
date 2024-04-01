@@ -11,10 +11,10 @@ export default function AudienceSection() {
 
     useGSAP(() => {
         gsap.from('.audience__content-cards', {
-            delay: 0.5,
+            delay: 0.3,
             duration: 1,
             opacity: 0,
-            stagger: 0.5,
+            stagger: 1,
             scrollTrigger: {
                 trigger: '.audience__content h1',
             }
