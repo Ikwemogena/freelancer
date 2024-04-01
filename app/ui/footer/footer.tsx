@@ -1,5 +1,3 @@
-"use client"
-
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
@@ -90,7 +88,7 @@ export default function Footer() {
                         <p>privacy</p>
                     </div>
                     <div className='footer__bottom-copyright'>
-                        <p>{year} Freelancer All rights reserved</p>
+                        <p><span>&copy;</span> {year} Freelancer All rights reserved</p>
                     </div>
                 </div>
             </div>
