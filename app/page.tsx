@@ -31,10 +31,7 @@ export default function Home() {
           <AboutUs />
           <AudienceSection />
           <Services />
-          <div>
-            <div className='black-overlay'></div>
-            <Testimonial />
-          </div>
+          <Testimonial />
           <Team />
           <Faq />
           <Footer />
