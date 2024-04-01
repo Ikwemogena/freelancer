@@ -4,8 +4,8 @@ import React from 'react'
 const members = [
     {
         image: "https://s3-alpha-sig.figma.com/img/62b2/de86/3e5c02d1c4d27a7ec3537a08183734bc?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VsRPEgg6IqOOtWiJtBVUTmRepTDulMW6oYBmTntMgufqDQFRAIKiqWtkpGTjeCOy8RDRtI-GPgaK5zN0-dAgCJI29xvk7FQ4pO1jKh54eeftPRE3Q7ttS3yoDoekcdQ3ISYcj3MNEQrwQHDLXyd60G80uEFBapKQ5Q5EiTPv246jdz4yoSD1OPQkdJ5B7g00lPBu4uirUlNHhf~OGXAmoVhj0JO1Ism6y5Kr~RARSvB3lqaf5mAXx8faGlry9xdVwwRel7Np96ahUASoWQvODeC1s0nNzS5AIHHh213ZijRuNHRBeIiFxB-XpaDXTTq7ca1hI1g0kN~61~2-aGlOsQ__",
-        name: "Leslie Alexander",
-        role: "Co-Founder & CEO"
+        name: "John Doe",
+        role: "Community Manager"
     },
     {
         image: "https://s3-alpha-sig.figma.com/img/bde1/f480/1b16043d46286fa9c6617a21044f1a01?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OtO18tbH4Ggz7OkYiKkLdtMQbaMCuVC7pS3PPTkRqWyAKb4vGvVXeznBXQSatHFGjBN~UPm9b0x6BWRvAMvWcq2BdlglDWvCuo6SHX9bUIJ3yFrj~G01hNxMQaWSx8xzJsnnnvitPVS98YBGfA~MYY4UbfVPbaCSaimt9iGrbtRg4BRyLIVcmUnbhEFOMAppMgsdejo1uq1RJFAbXeDkF7HHbqdT4FppKoDNGfdf0hGlE42e11-Io9pb0Ax9BPs4mbil1j1TTxRZdldSrfYdWANqiZTW3hNvbKT7M6y1K8QhU3KYhhx7wwUaex6UBkjJNFw4odcWEy5VCd971l4qNQ__",
