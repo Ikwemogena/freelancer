@@ -9,6 +9,7 @@ gsap.registerPlugin(useGSAP)
 export default function HeroSection() {
   useGSAP(() => {
     gsap.from('.hero__section-content h1', {
+      delay: 2.5,
       duration: 1,
       y: 200,
       opacity: 0,
