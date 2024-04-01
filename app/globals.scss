@@ -438,6 +438,8 @@ body {
     display: flex;
     gap: 24px;
     overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
 
     &-card {
       display: flex;
