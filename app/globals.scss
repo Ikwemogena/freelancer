@@ -205,8 +205,8 @@ body {
   }
 
   &__image {
-    // width: 416px;
-    // height: 340px;
+    width: 416px;
+    height: 340px;
     // gap: 16px;
     // opacity: 0px;
     // object-fit: cover;
@@ -437,7 +437,7 @@ body {
   &__members {
     display: flex;
     gap: 24px;
-    overflow: hidden;
+    overflow-x: scroll;
 
     &-card {
       display: flex;
@@ -735,7 +735,7 @@ body {
   .team__members {
     display: flex;
     gap: 24px;
-    overflow: hidden;
+
   }
 
   .team__members-card {
@@ -849,23 +849,31 @@ body {
       line-height: 19.34px;
 
       &:nth-child(1) {
-        top: -20px;
-        left: 53px;
+        // top: -20px;
+        // left: 53px;
+        top: -70px;
+        left: 13px;
       }
 
       &:nth-child(2) {
-        top: -17px;
-        right: 31px;
+        // top: -17px;
+        // right: 31px;
+        top: -30px;
+        right: 13px;
       }
 
       &:nth-child(3) {
-        top: 262px;
-        left: 11px;
+        // top: 262px;
+        // left: 11px;
+        top: 232px;
+        left: 13px;
       }
 
       &:nth-child(4) {
-        top: 244px;
-        right: 11px;
+        // top: 244px;
+        // right: 11px;
+        top: 289px;
+        right: 13px;
       }
     }
   }
@@ -897,15 +905,15 @@ body {
   .testimonial__text {
     max-width: 400px;
     gap: 1rem;
-    margin: 0 0 50px 20px;
+    margin: 0 20px 40px;
 
     h3 {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 29.02px;
     }
 
     p {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 29.02px;
     }
   }
@@ -925,7 +933,7 @@ body {
 
   .team__members-card {
     &-image {
-      width: 348px;
+      width: 278px;
       height: 420px;
     }
 
@@ -955,6 +963,7 @@ body {
       }
 
       padding: 20px;
+      gap: 0.2rem;
     }
   }
 
