@@ -11,7 +11,7 @@ export default function AudienceSection() {
 
     useGSAP(() => {
         gsap.from('.audience__content-cards', {
-            delay: 0.3,
+            delay: 0.2,
             duration: 1,
             opacity: 0,
             stagger: 1,
