@@ -438,8 +438,10 @@ body {
     display: flex;
     gap: 24px;
     overflow-x: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer/Edge */
 
     &-card {
       display: flex;
@@ -923,7 +925,7 @@ body {
   .team {}
 
   .team__heading {
-    font-size: 63px;
+    font-size: 54px;
     line-height: 45px;
   }
 
